@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GorgojoxDev // Terminal Portfolio</title>
+  <meta name="description" content="Portfolio of GorgojoxDev: retro games, Python tools and Discord bots.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <a class="logo" href="#top">
+      <span class="logo-led"></span>
+      <span class="c-green">&gt;_</span>
+      <span class="c-blue">GORGOJOX</span><span class="c-yellow">.DEV</span>
+    </a>
+    <nav class="nav">
+      <a class="hov-blue" href="#profile">PROFILE</a>
+      <a class="hov-green" href="#inventory">STACK</a>
+      <a class="hov-yellow" href="#builds">BUILDS</a>
+      <a class="nav-push" href="#connect">PUSH</a>
+    </nav>
+  </header>
+
+  <main class="page" id="top">
+
+    <!-- HERO: kernel terminal -->
+    <section class="terminal">
+      <div class="terminal-bar">
+        <div class="win-dots">
+          <span class="bg-yellow"></span><span class="bg-green"></span><span class="bg-navy"></span>
+        </div>
+        <div class="terminal-title">CYBER-OS // KERNEL v2.5</div>
+      </div>
+      <div class="terminal-body">
+        <div class="boot">
+          <div><span>BIOS INITIALIZE ..........</span><b class="c-green">[OK]</b></div>
+          <div><span>DEV_RAM 2048K ............</span><b class="c-green">[ONLINE]</b></div>
+          <div><span>REPO_SYSTEM_TREE .......</span><b class="c-yellow">[MOUNTED]</b></div>
+        </div>
+
+        <p class="sys-label">SYS_ADMIN ID:</p>
+        <h1 class="hero-name">GORGOJOX<span class="c-green">DEV</span></h1>
+
+        <div class="badges">
+          <span class="badge badge-blue">&#9670; Web Apps</span>
+          <span class="badge badge-green">&#9670; Discord Bots</span>
+          <span class="badge badge-yellow glow-yellow">&#9733; Retro Games</span>
+        </div>
+
+        <div class="cmd">
+          <span class="cmd-prompt">DEV:\&gt;</span>
+          <span class="cmd-text" id="typed">exec_build --hot-reload</span>
+          <span class="cmd-cursor"></span>
+        </div>
+
+        <div class="btn-row">
+          <a class="key key-cyan" href="#builds"><span>&#9654;</span><span>DEPLOY PROJECT</span></a>
+          <a class="key key-yellow" href="#connect"><span>&#9889;</span><span>INIT DEV</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <!-- 01 PROFILE -->
+      <section id="profile" class="block">
+        <div class="sec-head">
+          <span class="sec-num bg-blue">01</span>
+          <h2 class="c-green">DEV PROFILE // STATUS</h2>
+        </div>
+        <div class="panel">
+          <div class="bio-row">
+            <div class="avatar">
+              <!-- To use a photo instead: replace the <svg> with <img src="images/avatar.png" alt="GorgojoxDev"> -->
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2h12v12H2V2zm2 2v8h8V4H4zm2 2h2v2H6V6zm4 0h2v2h-2V6zm-4 4h6v1H6v-1z"/>
+              </svg>
+              <span class="avatar-lvl">LVL.24</span>
+            </div>
+            <p class="bio">&#127775; Venezuelan in Spain | Game Developer in progress &#127918; | Star Wars fan! &#127756; | Gamer &#128126;. Building retro games, handy Python tools, and community bots.</p>
+          </div>
+          <dl class="specs">
+            <div><dt class="c-blue">ROLE_CLASS</dt><dd>Software Crafter / Tinkerer</dd></div>
+            <div><dt class="c-green">DEV_EXP</dt><dd>Undergrad &bull; Self-Directed</dd></div>
+            <div><dt class="c-yellow">NODE_BASE</dt><dd>Spain (Venezuelan) [Remote]</dd></div>
+            <div><dt class="c-yellow">OPEN_FOR</dt><dd><span class="open-for">Junior Dev // Internship</span></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 02 STACK -->
+      <section id="inventory" class="block">
+        <div class="sec-head">
+          <span class="sec-num bg-green">02</span>
+          <h2 class="c-green">STACK // INVENTORY</h2>
+          <span class="sec-tag c-yellow">[EXP_STATS]</span>
+        </div>
+        <div class="panel skills">
+          <!-- Change data-level (0-10) and the % text to match your real skills -->
+          <div class="skill" data-color="yellow" data-level="8">
+            <div class="skill-head"><span><b class="c-yellow">#</b> PYTHON 3.x (SCRIPTS / AUTOMATION)</span><em class="c-yellow">80%</em></div>
+            <div class="segments"></div>
+          </div>
+          <div class="skill" data-color="green" data-level="8">
+            <div class="skill-head"><span><b class="c-green">#</b> SCRATCH / GAME DESIGN</span><em class="c-green">85%</em></div>
+            <div class="segments"></div>
+          </div>
+          <div class="skill" data-color="cyan" data-level="7">
+            <div class="skill-head"><span><b class="c-blue">#</b> HTML5 / CSS / UI DESIGN</span><em class="c-blue">70%</em></div>
+            <div class="segments"></div>
+          </div>
+          <div class="skill" data-color="yellow" data-level="5">
+            <div class="skill-head"><span><b class="c-yellow">#</b> GIT / GITHUB WORKFLOW</span><em class="c-yellow">50%</em></div>
+            <div class="segments"></div>
+          </div>
+          <p class="skills-note">* METRICS RE-SYNC ON EVERY <b class="c-yellow">GIT PUSH</b> PIPELINE</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- 03 BUILDS -->
+    <section id="builds" class="block">
+      <div class="sec-head">
+        <span class="sec-num bg-yellow">03</span>
+        <h2 class="c-yellow">REPOSITORIES // BUILDS</h2>
+      </div>
+      <div class="scope"><b class="c-green">SCOPE:</b> Modern Web Pages &bull; Discord Bots &bull; Interactive Games</div>
+
+      <div class="builds">
+        <!-- BUILD 01: Scratch game -->
+        <article class="build build-blue">
+          <div class="build-banner banner-blue">
+            <span class="banner-title c-yellow">&#9733; FEATURED BUILD 01 &#9733;</span>
+            <span class="banner-sub">[SCRATCH ENGINE &bull; BROWSER PLAYABLE]</span>
+          </div>
+          <div class="build-meta">
+            <span class="c-green">BUILD_01 &bull; <span class="c-muted">ARCADE GAME</span></span>
+            <span class="meta-right c-yellow">STATUS: PLAYABLE</span>
+          </div>
+          <!-- TODO: your game's real title and description -->
+          <h3 class="c-blue">[YOUR GAME TITLE]</h3>
+          <p>A game I built in Scratch. [What is the goal? How do you play? What was the hardest part to build?]</p>
+          <div class="tags">
+            <span class="tag tag-blue">Scratch</span>
+            <span class="tag tag-blue">Game Logic</span>
+            <span class="tag tag-yellow">Game Design</span>
+          </div>
+          <div class="btn-row">
+            <!-- TODO: link to your shared Scratch project -->
+            <a class="key key-green" href="#" target="_blank" rel="noopener"><span>&#9654;</span><span>PLAY GAME</span></a>
+            <a class="key key-outline" href="#" target="_blank" rel="noopener"><span>&lt;/&gt;</span><span>VIEW SOURCE</span></a>
+          </div>
+        </article>
+
+        <!-- BUILD 02: Python GIF creator -->
+        <article class="build build-yellow">
+          <div class="build-banner banner-yellow">
+            <span class="banner-title c-green">&#9889; TOOL PIPELINE 02 &#9889;</span>
+            <span class="banner-sub c-yellow-soft">[PYTHON &bull; IMAGE PROCESSING &bull; CLI]</span>
+          </div>
+          <div class="build-meta">
+            <span class="c-yellow">BUILD_02 &bull; <span class="c-muted">PYTHON TOOL</span></span>
+            <span class="meta-right c-green">STATUS: ONLINE</span>
+          </div>
+          <!-- TODO: your tool's name and description -->
+          <h3 class="c-yellow">[GIF CREATOR // CLI]</h3>
+          <p>A Python program that turns images into animated GIFs. [What does it take as input? Which libraries did you use, e.g. Pillow?]</p>
+          <div class="tags">
+            <span class="tag tag-yellow">#Python</span>
+            <span class="tag tag-yellow">#Pillow</span>
+            <span class="tag tag-green">#Automation</span>
+          </div>
+          <div class="btn-row">
+            <!-- TODO: links to the GitHub repo and an example GIF -->
+            <a class="key key-cyan" href="#" target="_blank" rel="noopener"><span>&#9654;</span><span>SEE DEMO</span></a>
+            <a class="key key-yellow" href="#" target="_blank" rel="noopener"><span>&lt;/&gt;</span><span>VIEW SOURCE</span></a>
+          </div>
+        </article>
+
+        <!-- BUILD 03: Discord bot (from the Stitch design; delete this card if you don't have this project yet) -->
+        <article class="build build-green">
+          <div class="build-banner banner-green">
+            <span class="banner-title c-blue">&#9881; BOT PIPELINE 03 &#9881;</span>
+            <span class="banner-sub c-green-soft">[DISCORD BOT &bull; PYTHON API &bull; WEBHOOKS]</span>
+          </div>
+          <div class="build-meta">
+            <span class="c-green">BUILD_03 &bull; <span class="c-muted">COMMUNITY BOT</span></span>
+            <span class="meta-right c-green">STATUS: ONLINE</span>
+          </div>
+          <h3 class="c-green">[DISCORD AGENT BOT]</h3>
+          <p>An interactive, modular bot for Discord servers with slash commands, automatic roles, webhook integration and admin utilities for managing communities.</p>
+          <div class="tags">
+            <span class="tag tag-green">#DiscordAPI</span>
+            <span class="tag tag-yellow">#Python</span>
+            <span class="tag tag-green">#Automation</span>
+          </div>
+          <div class="btn-row">
+            <a class="key key-cyan" href="#" target="_blank" rel="noopener"><span>&#9889;</span><span>INVITE BOT</span></a>
+            <a class="key key-yellow" href="#" target="_blank" rel="noopener"><span>&lt;/&gt;</span><span>VIEW SOURCE</span></a>
+          </div>
+        </article>
+
+        <!-- MODULE 04: locked / coming soon -->
+        <article class="build build-locked">
+          <div class="locked-q">?</div>
+          <p class="locked-title">MODULE 04 &bull; CLASSIFIED PIPELINE</p>
+          <h3>[DEV_BRANCH: WIP NEXT BUILD]</h3>
+          <p>My next project is compiling in a stealth repository. Staging deployment incoming.</p>
+          <span class="locked-pill">LOCKED [BRANCH_PREREQ: REPO_MERGE]</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 CONTACT -->
+    <section id="connect" class="block">
+      <div class="sec-head">
+        <span class="sec-num bg-yellow">04</span>
+        <h2 class="c-yellow">PULL REQUEST // INIT CHAT</h2>
+      </div>
+      <div class="panel panel-contact">
+        <p class="contact-lead">Ready to review new code or collaborate on open-source repositories? Dispatch a signal to initialize a co-op sprint.</p>
+        <div class="socials">
+          <a class="key key-cyan" href="https://instagram.com/Gorgojoxdev" target="_blank" rel="noopener noreferrer"><span>&#128248;</span><span>INSTAGRAM</span></a>
+          <a class="key key-yellow" href="https://tiktok.com/@Gorgojoxdev" target="_blank" rel="noopener noreferrer"><span>&#127925;</span><span>TIKTOK</span></a>
+          <a class="key key-green" href="https://twitch.tv/Gorgojoxdev" target="_blank" rel="noopener noreferrer"><span>&#128126;</span><span>TWITCH</span></a>
+          <a class="key key-cyan" href="https://x.com/Gorgojoxdev" target="_blank" rel="noopener noreferrer"><span>&#10006;</span><span>X // TWITTER</span></a>
+        </div>
+        <div class="contact-main">
+          <a class="key key-dark" href="https://bsky.app/profile/Gorgojoxdev.bsky.social" target="_blank" rel="noopener noreferrer"><span>&#9729;</span><span>BLUESKY (@GORGOJOXDEV)</span></a>
+          <a class="key key-green" href="https://github.com/GorgojoxDev" target="_blank" rel="noopener noreferrer"><span>&lt;/&gt;</span><span>GITHUB REPOSITORIES</span></a>
+          <!-- TODO: put your real email address here -->
+          <a class="key key-yellow" href="mailto:hello@gorgojox.dev"><span>&#9993;</span><span>SEND PING // DEV_MAIL</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-status"><span class="c-yellow">ALL COMMITS MERGED</span> &bull; <span class="c-green">BUILDS PASSING</span></p>
+    <p>&copy; <span id="year">2026</span> <b class="c-blue">GORGOJOX.DEV</b> &bull; RETRO KERNEL</p>
+    <p class="footer-score">HIGH SCORE: <span class="c-green">999999 pts</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
